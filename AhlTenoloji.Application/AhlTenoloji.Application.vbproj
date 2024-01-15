@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>AhlTenoloji.Application</RootNamespace>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Behaviors\" />
+    <Folder Include="Wrapper\" />
+    <Folder Include="Validator\" />
+    <Folder Include="Services\" />
+    <Folder Include="Models\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="AutoMapper\" />
+  </ItemGroup>
+
+</Project>
