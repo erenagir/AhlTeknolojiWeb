@@ -25,6 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AhlTenoloji.Application\AhlTenoloji.Application.vbproj" />
     <ProjectReference Include="..\AhlTenoloji.Persistence\AhlTenoloji.Persistence.vbproj" />
   </ItemGroup>
 

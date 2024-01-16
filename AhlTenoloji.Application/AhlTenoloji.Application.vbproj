@@ -8,12 +8,13 @@
   <ItemGroup>
     <Folder Include="Behaviors\" />
     <Folder Include="Models\" />
-    <Folder Include="Services\Abstract\" />
-    <Folder Include="Services\Implements\" />
     <Folder Include="Validator\" />
-    <Folder Include="Services\" />
     <Folder Include="Exceptions\" />
     <Folder Include="AutoMapper\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AhlTenoloji.Domain\AhlTenoloji.Domain.vbproj" />
   </ItemGroup>
 
 </Project>

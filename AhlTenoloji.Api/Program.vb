@@ -1,3 +1,4 @@
+Imports AhlTenoloji.Application
 Imports AhlTenoloji.Domain
 Imports AhlTenoloji.Persistence
 Imports AhlTenoloji.Persistence.Models
@@ -26,7 +27,7 @@ Module Program
         builder.Services.AddDbContext(Of DbContext, AhlContext)
         builder.Services.AddScoped(GetType(IRepository(Of)), GetType(Repository(Of)))
         builder.Services.AddScoped(Of IUnitOfWork, UnitOfWork)
-
+        builder.Services.AddScoped(Of IImagesService, ImagesManager)
 
 
 
