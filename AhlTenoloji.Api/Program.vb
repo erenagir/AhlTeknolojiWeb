@@ -1,3 +1,5 @@
+Imports AhlTenoloji.Domain
+Imports AhlTenoloji.Persistence
 Imports Deneme.Aplication
 Imports Deneme.Domain
 Imports Deneme.Persistance
@@ -19,6 +21,13 @@ Module Program
         ' Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer()
         builder.Services.AddSwaggerGen()
+
+        builder.Services.AddDbContext(Of AhlContext)
+        builder.Services.AddScoped(GetType(IRepository(Of)), GetType(Repository(Of)))
+        builder.Services.AddScoped(Of IUnitOfWork, UnitOfWork)
+
+
+
 
 
         Dim app = builder.Build()
