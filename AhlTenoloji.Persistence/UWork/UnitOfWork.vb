@@ -1,4 +1,5 @@
 ﻿Imports AhlTenoloji.Domain
+Imports AhlTenoloji.Persistence.Models
 
 Public Class UnitOfWork
     Implements IUnitOfWork

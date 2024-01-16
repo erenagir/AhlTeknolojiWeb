@@ -1,6 +1,6 @@
 ﻿Public Class Page
     Inherits BaseEntity
-    Public Property UpperPageId As Long
+    Public Property UpperPageId As Int64
 
     Public Property Url As String
     Public Property Name As String

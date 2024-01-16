@@ -7,7 +7,7 @@
     Public Property IsActive As Boolean
     Public Property IsImportant As Boolean
 
-    Public Property Images As ICollection(Of Image)
+    Public Property Images As ICollection(Of Images)
 
 
 End Class

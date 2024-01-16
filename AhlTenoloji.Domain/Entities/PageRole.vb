@@ -1,7 +1,7 @@
 ﻿Public Class PageRole
     Inherits BaseEntity
-    Public Property PageId As Long
-    Public Property RoleId As Long
+    Public Property PageId As Int64
+    Public Property RoleId As Int64
 
     Public Property Page As Page
     Public Property Role As Role

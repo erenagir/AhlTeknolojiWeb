@@ -1,5 +1,6 @@
 Imports AhlTenoloji.Domain
 Imports AhlTenoloji.Persistence
+Imports AhlTenoloji.Persistence.Models
 Imports Deneme.Aplication
 Imports Deneme.Domain
 Imports Deneme.Persistance
@@ -22,7 +23,7 @@ Module Program
         builder.Services.AddEndpointsApiExplorer()
         builder.Services.AddSwaggerGen()
 
-        builder.Services.AddDbContext(Of AhlContext)
+        builder.Services.AddDbContext(Of DbContext, AhlContext)
         builder.Services.AddScoped(GetType(IRepository(Of)), GetType(Repository(Of)))
         builder.Services.AddScoped(Of IUnitOfWork, UnitOfWork)
 
